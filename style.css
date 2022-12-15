@@ -12,13 +12,35 @@ header {
 header,
 nav,
 main {
-  border: 2px solid green;
-  background-color: white;
-  min-height: 10vh;
+  border: 2px solid green; /*so pra ter de guia.. dps tira..*/
+  /* background-color: white; */
+  /* min-height: 10vh; */
 }
 nav,
 main {
-  min-height: 82vh;
+  /* min-height: 82vh; */
+}
+
+tr {
+  color: red;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+td {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.row > .col,
+.row > [class^="col-"],
+.bg {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  /* display: flex; */
+  background-color: rgba(115, 0, 255, 0.519);
+  border: 2px solid rgba(121, 9, 131, 0.6);
 }
 
 @media (min-width: 576px) {
@@ -32,8 +54,10 @@ main {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  /* notebook */
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  /* pc+ */
 }

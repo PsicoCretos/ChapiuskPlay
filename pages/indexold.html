@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+      <a href="#" class="navbar-brand">Mp3Player</a>
+      <!-- <a href="#" class="navbar-brand">#</a> -->
+
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+          <!-- <li class="nav-item"><a href="#" class="nav-link">Algo</a></li> -->
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Opções</a
+            >
+            <div class="dropdown-menu">
+              <a href="indexold.html" class="dropdown-item">Opção 1 - Index</a>
+              <a href="" class="dropdown-item">Opção 2</a>
+              <a href="" class="dropdown-item">Opção 3</a>
+              <a href="" class="dropdown-item">Opção 4</a>
+              <div class="dropdown-divider"></div>
+              <a href="" class="dropdown-item">Opção 5</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Contato</a
+            >
+            <div class="dropdown-menu">
+              <a
+                href="https://chat.whatsapp.com/FYCava5SQScEQf9ByrTxj1"
+                target="_blank"
+                class="dropdown-item"
+                >WhatsApp</a
+              >
+              <div class="dropdown-divider"></div>
+              <a href="" class="dropdown-item">E-mail (não sei)</a>
+            </div>
+          </li>
+        </ul>
+
+        <form action="" class="form-inline my-2 my-lg-0">
+          <input
+            type="search"
+            class="form-control mr-sm-2"
+            placeholder="Pesquisar..."
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- <hr /> -->
+    <div class="container">
+      <!-- ou   <div class="container-fluid">  p pegar 100% da tela -->
+
+      <div class="row">
+        <div class="col-12 col-sm-4">1</div>
+        <div class="col-6 col-sm-8">2</div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-md-4">
+          col-6 ocupa metade no max e md-4 é quanto ta ocupando
+        </div>
+        <div class="col-6 col-md-4">
+          pra ficar responsivo quando mudar p celular
+        </div>
+        <div class="col-6 col-md-4">Maximo 12, so fazer as contas :)</div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">col-6</div>
+        <div class="col-6">col-6</div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-8">ocupa 8</div>
+        <div class="col-sm-4">ocupa 4 - total 12</div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">automatico sm</div>
+        <div class="col-sm-5">
+          col-sm-5 mudando essa, as outras se ajustam auto
+        </div>
+        <div class="col-sm">auto sm</div>
+      </div>
+
+      <hr />
+      <div class="d-flex justify-content-start bg">
+        <div class="bg p-1">alinha no começo</div>
+        <div class="bg p-1">O</div>
+        <div class="bg p-1">Conteudo</div>
+      </div>
+
+      <div class="d-flex justify-content-end bg">
+        <div class="bg p-1">Alinha no final</div>
+        <div class="bg p-1">O</div>
+        <div class="bg p-1">Conteudo</div>
+      </div>
+
+      <div class="d-flex justify-content-center bg">
+        <div class="bg p-1">Alinha</div>
+        <div class="bg p-1">Ao</div>
+        <div class="bg p-1">Meio</div>
+      </div>
+
+      <div class="d-flex justify-content-between bg">
+        <div class="bg p-1">Distribui</div>
+        <div class="bg p-1">ENTRE/between</div>
+        <div class="bg p-1">O conteudo</div>
+      </div>
+
+      <div class="d-flex justify-content-around bg">
+        <div class="bg p-1">Distribui</div>
+        <div class="bg p-1">Em Volta</div>
+        <div class="bg p-1">/Por ai</div>
+      </div>
+
+      <hr />
+      <div class="custom-control custom-switch">
+        <input
+          type="checkbox"
+          name="gender"
+          id="switch"
+          class="custom-control-input"
+          value="M"
+        />
+        <label for="switch" class="custom-control-label"
+          >Manter Conectado</label
+        >
+      </div>
+
+      <hr />
+      <div class="custom-control custom-checkbox">
+        <input
+          type="checkbox"
+          name="gender"
+          id="gender-m"
+          class="custom-control-input"
+          value="M"
+        />
+        <label for="gender-m" class="custom-control-label"
+          >Aceito os termos de uso</label
+        >
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <label for="Volume">Volume (exemplo, de 2 em 2)</label>
+        <input
+          class="custom-range"
+          min="0"
+          max="100"
+          step="2"
+          type="range"
+          name="volume"
+          id="volume"
+        />
+      </div>
+      <hr />
+
+      <form action="">
+        <div class="form-group">
+          <label for="Volume">Volume</label>
+          <input
+            class="form-control-range"
+            type="range"
+            name="volume"
+            id="volume"/>
+          </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+    <hr />
+    </div>
+
+    <script src="assets/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(() => {});
+    </script>
+  </body>
+</html>
+
+<a
+  href="index.html"
+  class="dropdown-item"
+  style="
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+    font-size: 24px;
+    border: 10px solid rgb(7, 255, 7);
+    border-radius: 20px;
+    height: 100%;
+    width: 250px;
+    background-color: green;
+  "
+  >Voltar ao Menu</a
+>
