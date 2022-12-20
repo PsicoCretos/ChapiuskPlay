@@ -1,85 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mp3 Teste 2</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="../style2.css" />
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
-      <a href="#" class="navbar-brand">Mp3Player</a>
-      <!-- <a href="#" class="navbar-brand">#</a> -->
+    <!-- BODY - COMEÇO -->
+    <!--  -->
+    <div id="player">
+      <!-- container de nome player #player-->
 
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <!-- <li class="nav-item"><a href="#" class="nav-link">Algo</a></li> -->
-
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-              >Opções</a
-            >
-            <div class="dropdown-menu">
-              <a href="indexold.html" class="dropdown-item">Testes</a>
-              <a href="mp3teste.html" class="dropdown-item">Mp3 Teste 1 </a>
-              <a href="mp3teste2.html" class="dropdown-item">Mp3 Teste 2</a>
-              <a href="mp3teste3.html" class="dropdown-item">Mp3 Teste 3</a>
-              <div class="dropdown-divider"></div>
-              <a href="finalle.html" class="dropdown-item">Grand Finalle</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-              >Contato</a
-            >
-            <div class="dropdown-menu">
-              <a
-                href="https://chat.whatsapp.com/FYCava5SQScEQf9ByrTxj1"
-                target="_blank"
-                class="dropdown-item"
-                >WhatsApp</a
-              >
-              <div class="dropdown-divider"></div>
-              <a href="" class="dropdown-item">E-mail (não sei)</a>
-            </div>
-          </li>
-        </ul>
-
-        <form action="" class="form-inline my-2 my-lg-0">
-          <input
-            type="search"
-            class="form-control mr-sm-2"
-            placeholder="Pesquisar..."
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Pesquisar
-          </button>
-        </form>
+      <h4><i class="material-icons">equalizer</i>Mp3Player</h4>
+      <div class="card">
+        <div class="card-image"></div>
+        <!-- img do player -->
+        <div class="card-content">
+          <h5>Título</h5>
+          <p class="artist">Artista</p>
+          <audio controls></audio>
+          <!-- controls ja habilita os controles de audio -->
+          <!-- src="../musics/WAIT FOR U (feat. Drake & Tems).mp3" -->
+        </div>
+        <!-- descritivo do player -->
       </div>
-    </nav>
-
     </div>
-    <script src="assets/jquery-3.6.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="index.js"></script>
+    <!-- <script src="assets/jquery-3.6.1.min.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 
     <script>
       $(() => {});
     </script>
   </body>
 </html>
-
+<!--
 <a
   href="index.html"
   class="dropdown-item"
@@ -89,9 +48,9 @@
     font-size: 24px;
     border: 10px solid rgb(7, 255, 7);
     border-radius: 20px;
-    height: 100%;
+    height: 70px;
     width: 250px;
     background-color: green;
   "
   >Voltar ao Menu</a
->
+> -->

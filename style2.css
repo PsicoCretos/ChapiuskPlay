@@ -1,0 +1,46 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+body {
+  height: 100vh; /* altura de 100 da visão da altura - altura fixa */
+  background-color: #ea873f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#player {
+  background-color: rgba(0, 0, 0, 0.904);
+  width: 90%; /*largura/ n chega até o final da tela*/
+  max-width: 375px; /*largura limite*/
+  box-shadow: 1px 4px 6px 0px black, 0px 3px 2px -4px black,
+    0px 2px 6px 1px black; /*posição X, posição Y, Blur, Radius*/
+}
+
+.card {
+  box-shadow: none;
+  margin: 0;
+}
+
+h4 {
+  color: #ea873f;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-image {
+  background: url("img/display.png") no-repeat center center / cover; /* não repetir, centralizar , cubra toda a div card-image */
+  height: 330px;
+  width: 375px;
+}
+
+/* audio controls */
+audio {
+  width: 100%;
+  margin-top: 50px;
+}
