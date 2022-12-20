@@ -9,6 +9,69 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a href="#" class="navbar-brand">Mp3Player</a>
+      <!-- <a href="#" class="navbar-brand">#</a> -->
+
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <!-- <li class="nav-item"><a href="#" class="nav-link">Algo</a></li> -->
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Opções</a
+            >
+            <div class="dropdown-menu">
+              <a href="indexold.html" class="dropdown-item">Testes</a>
+              <a href="mp3teste.html" class="dropdown-item">Mp3 Teste 1 </a>
+              <a href="mp3teste2.html" class="dropdown-item">Mp3 Teste 2</a>
+              <a href="mp3teste3.html" class="dropdown-item">Mp3 Teste 3</a>
+              <div class="dropdown-divider"></div>
+              <a href="finalle.html" class="dropdown-item">Grand Finalle</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Contato</a
+            >
+            <div class="dropdown-menu">
+              <a
+                href="https://chat.whatsapp.com/FYCava5SQScEQf9ByrTxj1"
+                target="_blank"
+                class="dropdown-item"
+                >WhatsApp</a
+              >
+              <div class="dropdown-divider"></div>
+              <a href="" class="dropdown-item">E-mail (não sei)</a>
+            </div>
+          </li>
+        </ul>
+
+        <form action="" class="form-inline my-2 my-lg-0">
+          <input
+            type="search"
+            class="form-control mr-sm-2"
+            placeholder="Pesquisar..."
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </nav>
+    <hr />
     <div
       class="container"
       style="display: flex; justify-content: center; border: 5px solid green"
@@ -67,6 +130,7 @@
         </div>
       </div>
     </div>
+    <hr />
     <script src="assets/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
